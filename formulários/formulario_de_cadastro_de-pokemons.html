@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Cadastro de Porkémons</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Cadastro de Pokémons</h1>
+        </header>
+        <nav>
+            <ul>
+                <!--Inserção das tags de abertura e fechamento do elemento "ul"-->
+                <li><a href="#id-do-pokemon">ID do Pokémon</a></li>
+                <li><a href="#nome-do-pokemon">Nome do Pokémon</a></li>
+                <li><a href="#tipo-do-pokemon">Tipo do Pokémon</a></li>
+                <!--Remoção do link e da tabela "tipo-secundario-de-pokemon" e alteração do link e da tabela "tipo-primario-de-pokemon" para "tipo-de-pokemon"-->
+                <li><a href="#cor-do-pokemon">Cor do Pokémon</a></li>
+                <li><a href="#pokemon-do-tipo-lendario">Pokémon Lendário</a></li>
+                <li><a href="#geração-do-pokemon">Geração do Pokémon</a></li>
+                <li><a href="#status-do-pokemon">Status do Pokémon</a></li>
+            </ul>
+            <!--Inserção das tags de abertura e fechamento do elemento "ul"-->
+        </nav>
+        <main>
+            <form>
+                <!--Inserção da tag de abertura e fechamento do elemento "form"-->
+                <section id="id-do-pokemon">
+                    <!--Alteração do tipo de formulário-->
+                    <header>
+                        <h2>1. Número do Pokémon</h2>
+                        <h3>Preencha o campo abaixo com o número do Pokémon.</h3>
+                    </header>
+                    <div>
+                        <fieldset>
+                            <legend>Qual o ID do Pokémon?</legend>
+                            <div>
+                                <label for="id-pokemon">Número</label>
+                                <input type="number" id="id-pokemon" name="numero">
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+                <section id="nome-do-pokemon">
+                    <header>
+                        <h2>2. Nome do Pokémon</h2>
+                        <h3>Preencha o campo abaixo com o nome do pokémon.</h3>
+                        <!--Inclusão dos cabeçalhos de nível 2 e 3 dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Qual é o nome do Pokémon?</legend>
+                            <label for="nome-pokemon">Nome</label>
+                            <!--Alteração do valor "nome" para "nome-do-pokemon-->
+                            <input id="nome-pokemon" type="text" name="nome">
+                            <!--Alteração do valor do atributo id: de "nome" para "nome-do-pokemon"-->
+                            <!--Remoção do atributo value-->
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <section>
+                    <header id="tipo-do-pokemon">
+                        <h2>3. Tipo do Pokémon</h2>
+                        <h3>Marque uma das opções abaixo.</h3>
+                        <!--Inclusão desta linha dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Qual é o tipo Primário do Pokémon?</legend>
+                            <ul>
+                                <!--Alteração de todos os valores da tabela (Mudança de valor do elemento TYPE de "radio" para "checkbox" e as devidas alterações nos valores dos atributos NAME, ID e FOR -->
+                                <li>
+                                    <input type="checkbox" name="aco" id="tipo-aco">
+                                    <label for="tipo-aco">Aço</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="agua" id="tipo-agua">
+                                    <label for="tipo-agua">Água</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="dragao" id="tipo-dragao">
+                                    <label for="tipo-dragao">Dragão</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="eletrico" id="tipo-eletrico">
+                                    <label for="tipo-eletrico">Elétrico</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="fada" id="tipo-fada">
+                                    <label for="tipo-fada">Fada</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="fantasma" id="tipo-fantasma">
+                                    <label for="tipo-fantasma">Fantasma</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="fogo" id="tipo-fogo">
+                                    <label for="tipo-fogo">Fogo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="gelo" id="tipo-gelo">
+                                    <label for="tipo-gelo">Gelo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="inseto" id="tipo-inseto">
+                                    <label for="tipo-inseto">Inseto</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="lutador" id="tipo-lutador">
+                                    <label for="tipo-lutador">Lutador</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="normal" id="tipo-normal">
+                                    <!--Alteração do valor do atributo ID de "norma" para "tipo-normal" (erro de digitação)-->
+                                    <label for="tipo-normal">Normal</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="pedra" id="tipo-pedra">
+                                    <label for="tipo-pedra">Pedra</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="planta" id="tipo-planta">
+                                    <label for="tipo-planta">Planta</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="psiquico" id="tipo-psiquico">
+                                    <label for="tipo-psiquico">Psíquico</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="sombrio" id="tipo-sombrio">
+                                    <label for="tipo-sombrio">Sombrio</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="terra" id="tipo-terra">
+                                    <label for="tipo-terra">Terra</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="venenoso" id="tipo-venenoso">
+                                    <label for="tipo-venenoso">Venenoso</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="voador" id="tipo-voador">
+                                    <label for="tipo-voador">Voador</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <!--Remoção de uma tabela duplicada-->
+                <section>
+                    <header id="cor-do-pokemon">
+                        <h2>4. Cor do Pokémon</h2>
+                        <h3>Marque quantas opções abaixo desejar.</h3>
+                        <!--Inclusão desta linha dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <!--Alteração do formulário do tipo "radio" para o tipo "option"-->
+                            <legend>Qual é a Cor Predominante do Pokémon?</legend>
+                            <label for="campo-cor">Cor</label>
+                            <select name="cor" id="campo-cor">
+                                <option value="">Selecione uma cor...</option>
+                                <option value="Amarelo">Amarelo</option>
+                                <option value="Azul">Azul</option>
+                                <option value="Branco">Branco</option>
+                                <option value="Cinza">Cinza</option>
+                                <option value="Marrom">Marrom</option>
+                                <option value="Preto">Preto</option>
+                                <option value="Rosa">Rosa</option>
+                                <option value="Roxo">Roxo</option>
+                                <option value="Verde">Verde</option>
+                                <option value="Vermelho">Vermelho</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <section>
+                    <header id="pokemon-do-tipo-lendario">
+                        <h2>5. Pokémon Lendário</h2>
+                        <h3>Marque apenas uma das opções abaixo.</h3>
+                        <!--Inclusão desta linha dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>O Pokémon é do Tipo Lendário?</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="lendario" id="sim">
+                                    <label for="sim">Sim</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="lendario" id="nao">
+                                    <!--Correção do valor do atributo ID de "não" para "nao" (erro de digitação)-->
+                                    <label for="nao">Não</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <section>
+                    <header id="geração-do-pokemon">
+                        <h2>6. Geração do Pokémon</h2>
+                        <h3>Marque apenas uma das opções abaixo.</h3>
+                        <!--Inclusão desta linha dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <!--Alteração do formulário do tipo "checkbox" para o tipo "option value"-->
+                            <legend>Qual a Geração do Pokémon</legend>
+                            <label for="campo-geracao">Geração</label>
+                            <select name="geracao" id="campo-geracao">
+                                <option value="">Selecione uma opção</option>
+                                <option value="1">1ª Geração</option>
+                                <option value="2">2ª Geração</option>
+                                <option value="3">3ª Geração</option>
+                                <option value="4">4ª Geração</option>
+                                <option value="5">5ª Geração</option>
+                                <option value="6">6ª Geração</option>
+                                <option value="7">7ª Geração</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <section>
+                    <header id="status-do-pokemon">
+                        <h2>7. Status do Pokémon</h2>
+                        <h3>Declare no campo abaixo o HP do pokémon.</h3>
+                        <!--Inclusão desta linha dentro do elemento "header"-->
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>HP</legend>
+                            <input type="number" name="hp" id="campo-hp" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo o Ataque do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Ataque</legend>
+                            <input type="number" name="ataque" id="campo-ataque" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo a Defesa do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Defesa</legend>
+                            <input type="number" name="defesa" id="campo-defesa" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo o Ataque Especial do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Ataque Especial</legend>
+                            <input type="number" name="ataque-especial" id="campo-ataque-especial" step="1" min="0"
+                                max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo a Defesa Especial do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Defesa Especial</legend>
+                            <input type="number" name="defesa-especial" id="campo-defesa-especial" step="1" min="0"
+                                max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo a Velocidade do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Velocidade</legend>
+                            <input type="number" name="velocidade" id="campo-velocidade" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo a Altura (Em metros) do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Altura</legend>
+                            <input type="number" name="altura" id="campo-altura" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo o Peso (Em Kg) do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Peso</legend>
+                            <input type="number" name="peso" id="campo-peso" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo a Taxa de Captura do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Taxa de Captura</legend>
+                            <input type="number" name="taxa-de-captura" id="taxa-de-captura" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                    <h3>Declare no campo abaixo o Valor Total do pokémon.</h3>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Valor Total</legend>
+                            <input type="number" name="valor-total" id="campo-valor-total" step="1" min="0" max="255">
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+                <section>
+                    <header>
+                        <h2>Enviar formulário</h2>
+                        <h3>Clique no botão abaixo para enviar seu formulário.</h3>
+                    </header>
+                    <div>
+                        <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                        <fieldset>
+                            <legend>Deseja enviar este formulário?</legend>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </div>
+                    <!--Inclusão das tags de abertura e fechamento do elemento "div"-->
+                </section>
+            </form>
+            <!--Inserção da tag de abertura e fechamento do elemento "form"-->
+        </main>
+    </body>
+
+</html>
